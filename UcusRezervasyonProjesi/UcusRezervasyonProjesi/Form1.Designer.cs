@@ -50,6 +50,8 @@
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             label8 = new Label();
+            button2 = new Button();
+            label9 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             panel1.SuspendLayout();
@@ -58,6 +60,8 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(label9);
+            groupBox1.Controls.Add(button2);
             groupBox1.Controls.Add(maskedTextBox1);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(dateTimePicker1);
@@ -70,7 +74,7 @@
             groupBox1.Margin = new Padding(4);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(4);
-            groupBox1.Size = new Size(285, 186);
+            groupBox1.Size = new Size(304, 186);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Uçuş Bilgileri";
@@ -265,6 +269,26 @@
             label8.TabIndex = 0;
             label8.Text = "Türk Hava Yolları Rezervasyon Sistemi";
             // 
+            // button2
+            // 
+            button2.Location = new Point(254, 70);
+            button2.Name = "button2";
+            button2.Size = new Size(43, 26);
+            button2.TabIndex = 8;
+            button2.Text = "<>";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(247, 164);
+            label9.Name = "label9";
+            label9.Size = new Size(50, 18);
+            label9.TabIndex = 9;
+            label9.Text = "label9";
+            label9.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 18F);
@@ -312,5 +336,7 @@
         private Panel panel1;
         private PictureBox pictureBox1;
         private Label label8;
+        private Label label9;
+        private Button button2;
     }
 }
